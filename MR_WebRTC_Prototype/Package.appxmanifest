@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  
+  xmlns:desktop4="http://schemas.microsoft.com/appx/manifest/desktop/windows10/4"
+  
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="759867b8-095a-4843-a958-2b9dc71d43f4"
+    Publisher="CN=kh2"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="759867b8-095a-4843-a958-2b9dc71d43f4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>MR_WebRTC_Prototype</DisplayName>
+    <PublisherDisplayName>kh2</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="MR_WebRTC_Prototype.App"
+      desktop4:SupportsMultipleInstances="true">
+      <uap:VisualElements
+        DisplayName="MR_WebRTC_Prototype"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="MR_WebRTC_Prototype"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="microphone"/>
+    <DeviceCapability Name="webcam"/>
+  </Capabilities>
+</Package>

@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="MR_WebRTC_Prototype.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MR_WebRTC_Prototype"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <MediaPlayerElement x:Name="Mpe_remoteVideo"/>
+        <MediaPlayerElement x:Name="Mpe_localVideo"
+                            Width="320"
+                            Height="240"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Margin="0,0,20,20"/>
+        <Button x:Name="Btn_CreateOffer"
+                Click="Btn_CreateOffer_Click"
+                Content="Create Offer"
+                VerticalAlignment="Top"
+                Margin="20,20,0,0"
+                />
+    </Grid>
+</Page>
